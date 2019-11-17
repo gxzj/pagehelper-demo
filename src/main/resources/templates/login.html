@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>登录</title>
+</head>
+<body>
+  <fieldset>
+    <legend>登录</legend>
+    <p th:text="#{msg}">aaaaa</p>
+    <form action="/login" method="post">
+      用户名：<input type="text" name="userAccount">
+      密码：<input type="text" name="userPassword">
+      <input type="submit">
+    </form>
+  </fieldset>
+  <script th:inline="javascript">
+    var msg = [[${msg}]];
+    console.info(msg);
+  </script>
+</body>
+</html>

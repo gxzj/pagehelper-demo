@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>列表</title>
+</head>
+<body>
+<div th:each="user : ${list}">
+    <p>id: <span th:text="*{user.getId()}?: '(no id specified)'">1</span>.</p>
+    <p>account: <span th:text="*{user.getAccount()}?: '(no account specified)'">aa</span>.</p>
+    <p>password: <span th:text="*{user.getPassword()}?: '(no password specified)'">111</span>.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gx.pagehelperdemo.mapper.GradeMapper" >
+  <resultMap id="BaseResultMap" type="com.gx.pagehelperdemo.entity.Grade" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="gradeid" property="gradeid" jdbcType="INTEGER" />
+    <result column="userid" property="userid" jdbcType="INTEGER" />
+    <result column="lessonid" property="lessonid" jdbcType="INTEGER" />
+    <result column="marks" property="marks" jdbcType="DECIMAL" />
+    <result column="endmarks" property="endmarks" jdbcType="DECIMAL" />
+    <result column="isneed" property="isneed" jdbcType="BIT" />
+    <result column="isused" property="isused" jdbcType="BIT" />
+    <result column="updatetime" property="updatetime" jdbcType="TIMESTAMP" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+  </resultMap>
+</mapper>
