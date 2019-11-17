@@ -104,7 +104,8 @@ public class UserController extends BaseController {
         //自定义条件分页查询
         Example example = new Example(UserInfo.class);
         Example.Criteria criteria = example.createCriteria();
-        criteria.andLike("userPassword", "%"+blur+"%"); //模糊查询
+        //模糊查询
+        criteria.andLike("userPassword", "%"+blur+"%");
         // RowBounds使用mysql的limit分页
         RowBounds rowBounds = new RowBounds(begin, limit); // offset起始行
         List<UserInfo> users = userService.findListByExampleAndRowBounds(example, rowBounds);
